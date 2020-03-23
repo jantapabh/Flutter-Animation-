@@ -1,5 +1,5 @@
 // Fade in and Fade out Animation
-
+// กดปุ่มแล้วแสดงคำอธิบายรูปภาพ
 import'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -13,20 +13,27 @@ class MyApp extends StatelessWidget{
      home: Scaffold(
        appBar: AppBar(title: Text("Animation"),),
        body: FadeInDemo(),
+       //Show FadeInDemo Class
      ),
 
    );
   }
 }
 
+// FadeInDemo class create FadeInDemoState and extends StatefulWidget
 class FadeInDemo extends StatefulWidget{
   FadeInDemoState createState() => FadeInDemoState();
-
+  //FadeInDemoState createState () => FadeInDemoState();
 }
 
 class FadeInDemoState extends State<FadeInDemo>{
   var opacity = 0.0;
   @override
+
+   //Display Main State
+  // onPressed สำหนับกดปุ๋มแล้สแวดงผลกาทำงาน
+  //MaterialButton with Onpressed use couple
+
 
   Widget build(BuildContext context) {
     // TODO: implement build
