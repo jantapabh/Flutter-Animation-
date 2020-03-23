@@ -9,10 +9,10 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
 
    return MaterialApp(
-     title: Animation,
+     title: "Animation",
      home: Scaffold(
        appBar: AppBar(title: Text("Animation"),),
-       body: FadeInDem(),
+       body: FadeInDemo(),
      ),
 
    );
