@@ -1,76 +1,40 @@
-//import 'package:flutter/material.dart';
-//
-//void main() => runApp(MyApp());
-//
-//class MyApp extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    return MaterialApp(
-//        title: "Animation",
-//        home: Scaffold(
-//          appBar: AppBar(title: Text("Animation")),
-//          body: FadeInDemo(),
-//        ));
-//  }
-//}
-//
-//class FadeInDemo extends StatefulWidget {
-//  FadeInDemoState createState() => FadeInDemoState();
-//}
-//
-//class FadeInDemoState extends State<FadeInDemo> {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Column(
-//      children: <Widget>[
-//        Image.asset('assets/image/pic1.jpg'),
-//        MaterialButton(
-//            child: Text("Show details",
-//                style: TextStyle(color: Colors.blueAccent)),
-//            onPressed: () => null),
-//        Container(
-//          child: Column(
-//            children: <Widget>[
-//              Text("Type: Owl"),
-//              Text("Food: Small mammals, insect")
-//            ],
-//          ),
-//        )
-//      ],
-//    );
-//  }
-//}
+// Fade in and Fade out Animation
 
-import 'package:flutter/material.dart';
+import'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: "Animation",
-        home: Scaffold(
-          appBar: AppBar(title: Text("Animation")),
-          body: FadeInDemo(),
-        ));
+
+   return MaterialApp(
+     title: Animation,
+     home: Scaffold(
+       appBar: AppBar(title: Text("Animation"),),
+       body: FadeInDem(),
+     ),
+
+   );
   }
 }
 
-class FadeInDemo extends StatefulWidget {
+class FadeInDemo extends StatefulWidget{
   FadeInDemoState createState() => FadeInDemoState();
+
 }
 
-class FadeInDemoState extends State<FadeInDemo> {
+class FadeInDemoState extends State<FadeInDemo>{
   var opacity = 0.0;
   @override
+
   Widget build(BuildContext context) {
+    // TODO: implement build
     return Column(
       children: <Widget>[
         Image.asset('assets/images/pic1.jpg'),
         MaterialButton(
-          child:
-          Text("Show details", style: TextStyle(color: Colors.blueAccent)),
+          child: Text("Show details",style: TextStyle(color: Colors.amber)),
           onPressed: () => setState(() {
             opacity = 1;
           }),
@@ -80,7 +44,7 @@ class FadeInDemoState extends State<FadeInDemo> {
           child: Column(
             children: <Widget>[
               Text("Type: Owl"),
-              Text("Food: Small mammals, insect")
+              Text("Food Small mammals, insect")
             ],
           ),
           opacity: opacity,
@@ -88,4 +52,7 @@ class FadeInDemoState extends State<FadeInDemo> {
       ],
     );
   }
+
+
+
 }
