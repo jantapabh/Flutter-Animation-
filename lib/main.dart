@@ -67,7 +67,7 @@ class FadeInDemoState extends State<FadeInDemo> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Image.asset('assets/image/pic1.jpg'),
+        Image.asset('assets/images/pic1.jpg'),
         MaterialButton(
           child:
           Text("Show details", style: TextStyle(color: Colors.blueAccent)),
